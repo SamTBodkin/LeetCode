@@ -1,0 +1,10 @@
+class Solution(object):
+    def countOdds(self, low, high):
+        count = 0
+        num = float(high-low)
+        if ((high % 2) + (low % 2)) == 2:
+            count = int((num / 2) + 1)
+        else:
+            count = int(ceil((num/2)))
+        return count
+        
